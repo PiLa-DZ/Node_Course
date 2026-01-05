@@ -25,5 +25,16 @@ db.users.find().sort({name: 1})
 db.users.find().sort({name: -1})
 " Update ================================================================ "
 db.users.updateOne({ name: "Ahmed" }, { $set: { age: 26 } })
-" Update ================================================================ "
+db.users.updateMany({???})
+" Delete ================================================================ "
 db.users.deleteOne({ name: "Ahmed" })
+db.users.deleteMany({})
+
+" How to add Nested Document "
+" How to use $ Operator and Complex Queries ($gt $lt $or)"
+" How to use $in and $nin"
+
+" MongoDB Drivers"
+" Install Mongodb for node.js"
+" Connecting To MongoDB"
+" Fetching Data"
