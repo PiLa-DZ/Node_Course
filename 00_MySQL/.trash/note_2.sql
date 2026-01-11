@@ -12,11 +12,15 @@ CREATE TABLE employees (
 	last_name VARCHAR(50),
 	hourly_pay DECIMAL(5, 2),
 	hire_date DATE
-)
+);
 
 -- Select teble
--- or Show teble
 SELECT * FROM employees;
+-- or Show teble
+DESCRIBE employees;
+-- or
+SHOW CREATE TABLE employees;
+SHOW CREATE TABLE employees \G
 
 -- Rename the table
 RENAME TABLE employees TO workers;
