@@ -1,0 +1,3 @@
+-- I Don't understand anything ???
+-- ON DELETE SET NULL = When a FK is deleted, replace FK with NULL
+-- ON DELETE CASCADE  = When a FK is deleted, delete row
