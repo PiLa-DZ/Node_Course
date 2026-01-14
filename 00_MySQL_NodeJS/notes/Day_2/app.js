@@ -18,7 +18,7 @@ const manageEmployees = async () => {
 
     /* READ   ================================================================ */
     const [rows] = await db.query("SELECT * FROM learners");
-    console.log(rows);
+    console.table(rows);
 
     /* DELETE ================================================================ */
     await db.query("DELETE FROM learners");
