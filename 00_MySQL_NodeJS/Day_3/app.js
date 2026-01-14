@@ -1,3 +1,4 @@
+//  Relational Power
 import db from "./db.js";
 
 async function workWithRelationships() {

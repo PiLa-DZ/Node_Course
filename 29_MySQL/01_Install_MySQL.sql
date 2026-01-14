@@ -15,3 +15,11 @@ sudo pacman -S dbeaver
 
 " You can also use terminal"
 $ mysql -u root -p
+
+" You can also add another user"
+mysql -u root -p
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+mysql -u admin -p
