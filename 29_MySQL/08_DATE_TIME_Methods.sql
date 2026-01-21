@@ -5,7 +5,7 @@ CREATE TABLE test(
     my_datetime DATETIME
 );
 
--- Add Data To The Table
+-- Add Date To The Table
 INSERT INTO test
 VALUES(CURRENT_DATE(), CURRENT_TIME(), NOW());
 
