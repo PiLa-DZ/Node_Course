@@ -23,3 +23,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 mysql -u admin -p
+
+-- Create a safe user
+CREATE USER 'developer_1'@'localhost' IDENTIFIED BY 'password';
+GRANT SELECT, INSERT, UPDATE ON facebook_db.* TO 'developer_1'@'localhost';
+-- Now this user CANNOT drop the database!
